@@ -5,29 +5,37 @@ body {
   line-height: 1.5;
   display: inline-block;
   color: #333;
-
+  width: 100vw;
 }
 
-a {
+ul a {
   color: #333;
+  text-align: center;
   text-decoration: none;
   padding: 5px 10px;
   margin: 0 2px;
   border-radius: 1px;
+}
+
+ul a:hover {
+  background-color: lightcoral;
+  color: #fff;
   transition: all 0.2s ease-in-out;
 }
 
+
 i {
   font-size: 2rem;
-  padding: 7px 12px 0 13px;
+  padding: 10px 12px;
   border-radius: 2px;
   background-color: lightcoral;
   color: #fff;
+  transition: all 0.2s ease-in-out;
 }
 
-a:hover {
-  background-color: lightcoral;
-  color: #fff;
+i:hover {
+  transform: rotate(-5deg);
+  cursor: pointer;
 }
 
 .cur {
@@ -50,17 +58,16 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
+  text-align: center;
+  padding: 5px 20px;
   background-color: #ccc;
 }
 
 .container {
   margin: auto;
   width: 80%;
-}
-
-main {
-  height: 700px;
+  height: 83vh;
 }
 
 .autor {
@@ -71,15 +78,33 @@ main article img {
   width: 40%;
 }
 
-article {
+.article {
   display: flex;
   padding: 10px;
   background-color: #efefef;
   height: 500px;
+  box-shadow: 3px 3px 8px rgba(150, 150, 150, 0.6);
 }
 
-.article {
+.card {
   margin-left: 20px;
+}
+
+.card p::first-letter {
+  font-size: 2rem;
+  margin-right: 1.5px;
+}
+
+label {
+  margin: 20px 5px 0 20px;
+}
+
+input {
+  margin: 20px 5px;
+}
+
+input::placeholder {
+  color: lightcoral;
 }
 
 footer {
