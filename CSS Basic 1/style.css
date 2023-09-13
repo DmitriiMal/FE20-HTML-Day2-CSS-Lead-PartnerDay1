@@ -10,9 +10,13 @@ h1 {
   visibility: hidden;
 }
 
-.right p {
-  display: none;
+#third p {
+  background-color: #ccc;
 }
+
+/* .right p {
+  display: inline;
+} */
 
 img {
   width: 300px;
@@ -21,4 +25,8 @@ img {
 
 p {
   color: red;
+}
+
+form {
+  margin: 20px 0;
 }
